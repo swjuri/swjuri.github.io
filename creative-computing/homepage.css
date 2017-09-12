@@ -1,0 +1,30 @@
+
+body {
+	background-color: #FFAA00;
+	font-family: "VT323","Helvetica","Arial",sans-serif;
+	
+	 }
+h1 {
+	border: 3px dotted  green;
+	background-color:white;
+	color: pink;
+}
+
+p {
+	line-height: 40px;
+	letter-spacing: 20px;
+	margin-top: 4cm;
+}
+#header {
+	color: red;
+	padding: 1px;
+}
+
+.phone-number {
+	font-weight: bold;
+}
+
+.international {
+	font-style: italic}
+
+
