@@ -31,14 +31,12 @@ a{
 }
 
 
-
-
 #header {
   margin-top: 0px;
   font-weight: bold;
   color: #1C4247;
   font-size: 80px;
-  font-family: "Abril Fatface","Helvetica","Arial",sans-serif;
+  font-family: "Abril Fatface","Helvetica",serif;
   letter-spacing:9px;
 	
 }
