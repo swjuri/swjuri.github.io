@@ -1,0 +1,40 @@
+body{
+	background-color:#DDDDDD;
+    margin-top: 0px;
+    color:#DDDDDD
+
+}
+.column{
+	font-family: "helvetica";
+	color:"#DDDDDD";
+}
+
+#left-column{
+	background-color: #001f3f;
+	width: 50%;
+	position: absolute
+	left:0px;
+	float:left;
+	top
+	
+
+}
+
+#right-column{
+	background-color: #FF4136;
+	width: 50%;
+	float:right;
+	right:0px;
+
+
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	background-color: #3d9970;
+	left: 0px;
+	right: 0px;
+
+
+}
