@@ -1,0 +1,182 @@
+html{
+
+	width:100%;/*change to fit screen}*/
+	height:100%;
+	margin:0 auto;
+	position:relative;
+	background: #70c4c6;
+	animation-name: am;
+	animation-duration: 20s;/*change to 24 hour}*/
+	animation-iteration-count: infinite;
+	overflow:hidden;
+	animation-timing-function: linear
+
+}
+
+.transition{
+
+	width:1800px;
+	height:1800px;
+	position:absolute;
+	left:60%;
+	top:20%;
+	animation-name: time;
+	animation-duration: 86400s;
+	animation-iteration-count: infinite;
+	z-index:0;
+	animation-timing-function: linear;
+}
+
+.sun{
+
+	width:70px;
+	height:70px;
+	top:-35px;
+	left:-35px;
+	border-radius: 50%;
+	background-color: #ffa;
+	position: absolute;
+}
+
+.sun2{
+
+	bottom: -35px;
+	right: -35px;
+	left: auto;
+	top:auto;
+
+}
+
+.moon{
+	position:absolute;
+	top: -35px;
+	right: -35px;
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+	background-color: #fff;
+
+}
+
+.moon2{
+
+	bottom: -35px;
+	left: -35px;
+	top:auto;
+	right: auto;
+}
+
+
+.cloud1{
+	top: 2%;
+  	left: 50%;
+  	animation: move 43200s linear infinite;
+}
+
+.cloud2 {
+  	top: 10%;
+  	left: 10%;
+  	animation: move 43200s linear infinite;
+}
+
+.cloud3 {
+  	top: 20%;
+  	left: 70%;
+  	animation: move 43200s linear infinite;
+}
+
+.land {
+	width: 100%;
+	height: 320px;
+	position: absolute;
+	left:-50px;
+	bottom: -120px;
+	background-color: #83a81c;
+	border-radius: 50%;
+	z-index: 1;
+	animation-name: land;
+	animation-duration: 43200s;
+	animation-iteration-count: infinite;
+}
+
+.land::before {
+	width: 100%;
+	height: 200px;
+	content: '';
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	border-radius: 50%;
+	background-color: #96be29;
+	transform: rotate(-15deg);
+	animation-name: land1;
+	animation-duration: 43200s;
+	animation-iteration-count: infinite;
+}
+
+
+
+@keyframes time {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+@keyframes am {
+	0% {  background-color: #70c4c6; }
+	15% {  background-color: #524b64; }
+	40% { background-color: #354a4a; }
+	70% { background-color: #354a4a; }
+	80% {  background-color: #e2b553; }
+	100% {  background-color: #70c4c6;}
+}
+@keyframes land {
+	40% { background-color: #4d6932; }
+	70% { background-color: #4d6932;}
+}
+@keyframes land1 {
+	40% { background-color: #5b793e; }
+	70% { background-color: #5b793e;}
+}
+@keyframes cloud {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(850px); }
+}
+@keyframes rotate {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@keyframes fader {
+	0% { opacity: 0; }
+	15% { opacity: 0; }
+	40% { opacity: 1; }
+	60% { opacity: 0.4; }
+	70% { opacity: 1; }
+	80% {  opacity: 0; }
+	100% { opacity: 0; }
+}
+	
+}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
