@@ -17,7 +17,7 @@ var isOn = false;
 document.onkeypress=function(e){
 	/* this is where u change color*/
 	if(isOn == false){
-		document.getElementById("my-houses").style.color = 'red';
+		document.getElementById("my-houses").style.color = 'yellow';
 		isOn = true;
 	} else {
 		document.getElementById("my-houses").style.color = 'white';
