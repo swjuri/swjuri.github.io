@@ -1,0 +1,145 @@
+body {
+  background-color: pink;
+
+}
+
+
+
+.container {
+  position: relative;
+}
+
+.round {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  transition: border-radius 0.5s, opacity 0.2s 0s;
+  opacity: .8;
+  cursor:crosshair;
+ 
+}
+
+
+
+
+.round-click {
+  opacity: 0;
+  border-radius: 5px;
+
+  
+}
+
+.big {
+  margin: -25px -25px;
+  width: 150px;
+  height: 150px;
+  animation-name: biggg;
+  animation-duration: 6s ;
+  animation-fill-mode: both;
+}
+
+.medium {
+  margin: -12px -12px;
+  width: 125px;
+  height: 125px;
+  animation-name: mediummm;
+  animation-duration: 13s ;
+  animation-fill-mode: both;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+  animation-name: smalll;
+  animation-duration: 9s ;
+  animation-fill-mode: both;
+
+}
+
+.white{
+  background-color: white;
+}
+
+.pink {
+  background-color: EF6F6F;
+
+}
+
+.blue {
+  background-color: 4AAFF4;
+}
+
+.green {
+  background-color: 53A04E;
+}
+
+.yellow {
+  background-color: F7F06F;
+}
+
+
+.orange {
+  background-color: F97946;
+}
+
+@keyframes smalll{
+            0% {
+               opacity: 0;
+               transform: translateY(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateY(30px);
+            }
+            80% {
+               transform: translateY(-10px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+         }
+
+@keyframes biggg{
+            0% {
+               opacity: 0;
+               transform: translateY(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateY(30px);
+            }
+            80% {
+               transform: translateY(-10px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+         }
+
+
+@keyframes mediummm{
+            0% {
+               opacity: 0;
+               transform: translateY(-2000px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateY(30px);
+            }
+            80% {
+               transform: translateY(-10px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+         }
+
+
+
+
+//*@keyframes  {
+ 
+
+.anim1 {
+  animation: anim1 3s ease-in-out infinite;
+}
