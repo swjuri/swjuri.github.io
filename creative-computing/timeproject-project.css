@@ -6,9 +6,9 @@ html{
 	position:relative;
 	background: #70c4c6;
 	transition: 2s;
-/*	animation-name: am;
+	animation-name: am;
 	animation-duration: 20s;/*change to 24 hour}*/
-/*	animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 	overflow:hidden;
 	animation-timing-function: linear*/
 
@@ -21,7 +21,7 @@ html{
 	position:absolute;
 	left:60%;
 	top:20%;
-	/*animation-name: time;
+	animation-name: time;
 	animation-duration: 86400s;
 	animation-iteration-count: infinite;
 	z-index:0;
@@ -96,7 +96,7 @@ html{
 	background-color: #83a81c;
 	border-radius: 50%;
 	z-index: 1;
-	/*animation-name: land;
+	animation-name: land;
 	animation-duration: 43200s;
 	animation-iteration-count: infinite;*/
 }
@@ -111,7 +111,7 @@ html{
 	border-radius: 50%;
 	background-color: #96be29;
 	transform: rotate(-15deg);
-	/*animation-name: land1;
+	animation-name: land1;
 	animation-duration: 43200s;
 	animation-iteration-count: infinite;*/
 }
