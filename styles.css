@@ -1,0 +1,42 @@
+/* Think of this CSS document as the paragraph/character styles panel. */
+
+h1 {
+    
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+
+   
+}
+p {
+    font-family: 'Passion One', cursive;
+    line-height: 1.3;
+    margin-left: 50px;
+    text-align: justify;
+    margin-bottom: 10px;
+    
+}
+
+body {
+    background:#fda7a7;
+}
+
+
+
+
+
+
+
+
+/* desktop scren overrides */
+@media (min-width: 768px) {
+    
+    h1 {
+        margin-top: 20px;
+        padding-left: 100px;
+    }
+    
+    p{
+        width:50%;
+        font-size: 24px;
+    }

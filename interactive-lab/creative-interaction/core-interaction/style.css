@@ -1,0 +1,30 @@
+body{ background-color: green;
+}
+
+h1{
+  background-color: deeppink;
+  text-align: center;
+  border: 4px dotted mediumvioletred;
+
+
+}
+
+a{
+  font-size: 100px;
+  color:pink;
+}
+
+img{
+  width:193px;
+}
+
+#good {
+  background-color: red;
+}
+
+.na{
+  font-family: helvetica;}
+
+.sa{
+  font-family: georgia;
+}
