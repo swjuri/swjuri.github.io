@@ -1,12 +1,30 @@
 body{
   background-color: pink;
   font-family: helvetica;
+  position: inherit;
+
+  color:white;
+
+
+
 }
 
 h1{
   text-align: center;
+  font-size: 50px;
 }
 
+h2{
+  text-align: center;
+}
 ul {
   list-style-type: none;
+}
+
+a{
+  color:gold;
+}
+
+#recipe{
+
 }
