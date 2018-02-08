@@ -1,0 +1,58 @@
+html, body {
+  margin: 30px;
+  height: 100%;
+  font-family: sans-serif;
+  background:pink;
+}
+
+header{text-align: center;}
+
+.calender {
+  margin: 1.9rem ;
+  width: 14rem; height: 16rem;
+  padding: 1.5rem;
+  border-radius: 3.5rem;
+  background: #404476;
+  font-size: 0;
+  float:left;
+  border-color: pink;
+  left:25%;
+}
+.day, .week, .month {
+  font-family: 'Arimo', sans-serif;
+  cursor: pointer;
+  font-size: .8rem;
+  line-height: 2rem;
+  color: #ccc;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2rem; height: 2rem;
+  border: 3px solid;
+  border-color: rgba(255,255,255,0);
+  border-radius: 30%;
+
+}
+
+.gg{
+  color:yellow;
+}
+
+
+
+
+.week {
+  cursor: default;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+.month {
+  width: 100%;
+}
+.day:hover {
+  border-color: rgba(255,255,255,.2);
+  background: rgba(255,255,255,.1);
+}
+.not {
+  color: #999;
+}

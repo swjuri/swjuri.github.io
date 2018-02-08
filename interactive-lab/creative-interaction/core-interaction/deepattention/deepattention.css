@@ -1,0 +1,105 @@
+
+
+html,
+body {
+	overflow-x: hidden;
+	background: linear-gradient( white, pink);
+}
+
+
+body {
+	font-family: "helvetica";
+	font-size: 19px;
+	font-weight: 400;
+
+}
+
+h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+p{
+  color:transparent;
+}
+p1{text-align: center;}
+
+
+header {
+	color: #black;
+	padding: 150px 0;
+  text-align: center;
+}
+
+
+
+section {
+	padding: 100px 0;
+}
+
+.button{
+  text-align: center;}
+.timeline {
+	position: relative;}
+
+p:hover{
+  color:red;}
+.timeline-item::after {
+	content: "";
+	display: block;
+	clear: both;}
+.timeline-content {
+	position: relative;
+	width: 15%;
+	padding: 10px 30px;
+	background: transparent;}
+.aa{left:60%;
+    width:70%}
+.a{left:34%;}
+.b{left:18%;}
+.cc{left:25%;}
+.ccc{left:29%;}
+.cccc{left: 12%;}
+.ccccc{left:10%;}
+.d{left:30%;}
+.dd{left:32%;}
+.ddd{left:35%;}
+.dddd{left:70%;}
+.ddddd{left:65%;}
+.e{left:50%;}
+.ee{left:15%;}
+.eee{left:48%;}
+.eeee{left: 37%;}
+.eeeee{left:60%;}
+.f{left:72%;}
+.ff{left:74%;}
+.fff{left:80%;}
+.ffff{left:58%}
+.fffff{left:64%}
+.g{left:24%;}
+.gg{left:47%;}
+.ggg{left:36%;}
+.gggg{left:63%;}
+.ggggg{left:80%;}
+.h{left:69%;}
+.hh{left:56%;}
+.hhh{left:49%;}
+.hhhh{left:32%;}
+.hhhhh{left:33%;}
+.i{left:11%;}
+.ii{left:41%;}
+.iii{left:13%;}
+.iiii{left:77%;}
+.iiiii{left:74%;}
+.j{left:82%;}
+.jj{left:26%;}
+.jjj{left:57%;}
+.jjjj{left:23%;}
+.jjjjj{left:32%;}
+.k{left:59%;}
+.kk{left:17%;}
+.kkk{left:18%;}
+.kkkk{left:6%}
+.kkkkk{left:31%;}

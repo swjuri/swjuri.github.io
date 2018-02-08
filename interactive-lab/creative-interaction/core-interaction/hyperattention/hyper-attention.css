@@ -1,0 +1,20 @@
+header{
+  padding: 100px 0;
+  font-size: 30pt;
+}
+body{
+  background-color: #;
+  text-align: center;
+  align-items: center;
+  font-size: 13pt;
+  line-height: 50pt;
+  font-family: 'Cutive Mono', monospace;
+  text-decoration: none;
+}
+
+
+
+p:hover{
+  font-size: 15pt;
+  color: deeppink;
+}
