@@ -1,0 +1,58 @@
+body{
+  background-color: #FFF8DC;
+}
+p{
+  display:inline-block;
+}
+
+div{
+  display:inline-block;
+}
+
+#container{
+  width:800px;
+}
+#yellow{
+	width: 900px;
+	height: 580px;
+	background: gold;
+  top:40px;
+  position: absolute;
+  left:33%;
+
+}
+
+#red{
+	width: 500px;
+	height: 500px;
+	background: 	#FF4500;
+  position:absolute;
+  top:690px;;
+  left:310px;
+
+}
+
+#blue{
+  width: 560px;
+	height: 340px;
+	background: #483D8B;
+  top:750px;
+  right:200px;
+  position:absolute;
+
+}
+.shapes{
+
+}
+
+.column{
+  width:190px;
+  font-size: 6px;
+  left:400px;
+  top:45px;
+  position:relative;
+}
+
+.column p{display:inline-block;
+
+}
