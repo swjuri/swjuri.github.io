@@ -1,0 +1,42 @@
+body{
+  font-family: Helvetica;
+  display: inline-block;
+}
+
+img{
+  width:400px;
+}
+
+@media screen and (min-width: 400px) {
+  body{
+    background-color: white;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  body{
+    background-color: white;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  body{
+
+
+
+  }
+
+  img{
+    float: center;
+    display: block;
+    position: relative;
+  }
+
+  p{
+    width:900px;
+    margin-left: 48%;
+
+
+}
