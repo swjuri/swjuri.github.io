@@ -66,7 +66,7 @@ drags.forEach(coordinate => {
     .css({
       left: coordinate.x,
       top: coordinate.y,
-      transform: "rotate(" + -coordinate.x / 20 + "deg)"
+      transform: "rotate(" + -coordinate.x / 10 + "deg)"
     });
   $(".box:nth-last-of-type(2) .boxcontent").css({
     width: Math.min(100, 90 + Math.abs(coordinate.x) / 200 * 10) + "%",
@@ -76,7 +76,7 @@ drags.forEach(coordinate => {
 });
 
 ends.forEach(coordinate => {
-  const minSwipeLength = 130;
+  const minSwipeLength = 300;
   if (coordinate.x > minSwipeLength) {
     like();
   } else if (coordinate.x < -minSwipeLength) {
