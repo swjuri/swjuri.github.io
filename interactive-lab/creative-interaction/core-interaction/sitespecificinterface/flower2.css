@@ -121,8 +121,8 @@ p::after{
 }
 #time{
   position: absolute;
-      display: inline-block;
-      visibility: hidden;
+      display: none;
+
       margin-top: -1590px;
       font-size: 5vmin;
       margin-left: -460px;
@@ -132,8 +132,8 @@ p::after{
 #numberquick {
 
   position: absolute;
-      display: inline-block;
-      visibility: hidden;
+      display: none;
+    
       margin-top: -1500px;
       font-size: 6vmin;
       margin-left: -500px;
@@ -143,8 +143,8 @@ p::after{
 #numberevery {
 
   position: absolute;
-      display: inline-block;
-      visibility: hidden;
+      display: none;
+
       margin-top: -1500px;
       font-size: 6vmin;
       margin-left: -500px;
@@ -154,8 +154,8 @@ p::after{
 #numbertries {
 
   position: absolute;
-      display: inline-block;
-      visibility: hidden;
+      display: none;
+
       margin-top: -1500px;
       font-size: 6vmin;
       margin-left: -500px;
