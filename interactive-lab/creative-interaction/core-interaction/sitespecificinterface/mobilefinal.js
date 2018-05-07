@@ -1,19 +1,19 @@
 (function() {
-  var mousedown = false,
+  var touchstart = false,
     card = false,
     initPos = {},
     delta = {},
     rotate = 0;
 
-  document.body.addEventListener("mousedown", touch);
-  document.body.addEventListener("mouseup", release);
-  window.addEventListener("mousemove", move);
+  document.body.addEventListener("touchstart", touch);
+  document.body.addEventListener("touchend", release);
+  window.addEventListener("touchmove", move);
 
   function move(e) {
-    if (mousedown) {
+    if (touchstart) {
       var currPos = {};
-      currPos.y = e.clientY || e.touches[0].clientY;
-      currPos.x = e.clientX || e.touches[0].clientX;
+      currPos.y = (event.targetTouches[0] ? event.targetTouches[0].pageY : event.changedTouches[event.changedTouches.length-1].pageY) || e.touches[0].clientY;
+      currPos.x = (event.targetTouches[0] ? event.targetTouches[0].pageX : event.changedTouches[event.changedTouches.length-1].pageX) || e.touches[0].clientX;
 
       if (!initPos.x) {
         initPos.y = currPos.y;
@@ -66,7 +66,7 @@
       }
     }
 
-    mousedown = false;
+    touchstart = false;
     initPos = {};
     card = false;
   }
@@ -77,7 +77,7 @@
       target.classList.add("moving");
 
       card = target;
-      mousedown = true;
+      touchstart = true;
     }
   }
 })();
