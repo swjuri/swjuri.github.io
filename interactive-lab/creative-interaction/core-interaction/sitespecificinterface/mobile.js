@@ -5,8 +5,8 @@ const mouseEventToCoordinate = mouseEvent => {
 const touchEventToCoordinate = touchEvent => {
   touchEvent.preventDefault();
   return {
-    x: touchEvent.changedTouches[0].clientX,
-    y: touchEvent.changedTouches[0].clientY
+    x: touchEvent.changedTouches[2].clientX,
+    y: touchEvent.changedTouches[2].clientY
   };
 };
 
@@ -39,7 +39,7 @@ let drags = dragStarts.concatMap(dragStartEvent => {
   return moves.takeUntil(dragEnds).map(dragEvent => {
     const x = dragEvent.x - dragStartEvent.x;
     const y = dragEvent.y - dragStartEvent.y;
-    return { x, y };
+
   });
 });
 
@@ -47,7 +47,7 @@ let ends = dragStarts.concatMap(dragStartEvent => {
   return dragEnds.first().map(dragEndEvent => {
     const x = dragEndEvent.x - dragStartEvent.x;
     const y = dragEndEvent.y - dragStartEvent.y;
-    return { x, y };
+
   });
 });
 
