@@ -1,27 +1,40 @@
-body {
-  background-color : #F4F4F4;
+html, body {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
+
+.card-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 500px;
+  width: 500px;
+}
+
 .card {
   position: absolute;
-  left:0;
-  right:0;
-  top: 40px;
-  margin:auto;
-  width: 200px;
-  background-color: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #219a47;
+  color: #FFF;
   text-align: center;
-  padding: 100px 0;
-  font-family: Candara;
-  color: #A6A6A6;
-   transition: all 300ms cubic-bezier(0.175, 0.885 ,0.32, 1.275) 50ms;
-  -webkit-transition: all 200ms cubic-bezier(0.175, 0.885 ,0.32, 1.275) 50ms;
-  -moz-transition: all 200ms cubic-bezier(0.175, 0.885 ,0.32, 1.275) 50ms;
-
+  padding-top: 25%;
+  font-size: 80px;
+  line-height: 130px;
+  cursor: pointer;
+  user-select: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
-
-.card.swipeLeft {
-   transform: translate(-200px, 100px) rotate(-10deg);
-  opacity: 0;
+.card.moving {
+  will-change: transform;
+}
+.card.card.animating-out {
+  will-change: transform;
+  transition-duration: .3s;
 }
