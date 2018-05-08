@@ -14,9 +14,6 @@ h1{
   top:46px;
 }
 
-img{
-  position: relative;
-}
 
 
 
@@ -31,8 +28,10 @@ img{
 
 .one{
   background-image: url("veg1.jpg");
-  background-size: 100%;
+
 }
+
+
 
 
 .card {
@@ -49,11 +48,11 @@ img{
   line-height: 130px;
 
   user-select: none;
-  font-family: 'lobster', cursive;
+  font-family: "futura";
 
 }
 .card.moving {
-  
+
 }
 .card.card.animating-out {
   will-change: transform;
