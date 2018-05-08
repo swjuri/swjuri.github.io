@@ -44,10 +44,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
   function release() {
     if (card) {
-      if (delta.x > 50 || delta.x < -50) {
+      if (delta.x > 10 || delta.x < -50) {
         var animleft;
 
-        if (delta.x > 50) {
+        if (delta.x > 10) {
           animleft = window.innerWidth;
         } else if (delta.x < -50) {
           animleft = -window.innerWidth;
