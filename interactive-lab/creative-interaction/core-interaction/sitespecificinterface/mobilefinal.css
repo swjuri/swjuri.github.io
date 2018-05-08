@@ -5,6 +5,17 @@ html, body {
   margin: 0;
 }
 
+h1{
+  font-weight: bold;
+  line-height: 230px;
+  font-size: 2.7em;
+  position: absolute;
+  left: 70px;
+  top:46px;
+}
+
+
+
 .card-container {
   position: relative;
   top: 50%;
@@ -37,4 +48,15 @@ html, body {
 .card.card.animating-out {
   will-change: transform;
   transition-duration: .3s;
+}
+
+@media screen and (min-width: 400px) {
+
+  .card-container {
+    position: relative;
+    top:870px;
+    transform: translateX(-50%) translateY(-50%);
+    height: 100%;
+    width: 100%;
+  }
 }
