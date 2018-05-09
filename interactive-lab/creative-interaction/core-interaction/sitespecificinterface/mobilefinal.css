@@ -14,13 +14,22 @@ h1{
   top:46px;
 }
 
+a{
+  font-size:7.7em;
+  margin: 30px;
+
+  text-decoration: none;
+  font-family: sans-serif;
+  color:white;
+  font-weight: bold;
+}
+
 
 
 
 .card-container {
   position: relative;
-  top: 50%;
-  left: 50%;
+
   transform: translateX(-50%) translateY(-50%);
   height: 100%;
   width: 100%;
@@ -41,14 +50,14 @@ h1{
   right: 0;
   bottom: 0;
 
-  color: #FFF;
+  color: hotpink;
   text-align: center;
   padding-top: 25%;
   font-size: 80px;
   line-height: 130px;
 
   user-select: none;
-  font-family: "futura";
+  font-family: helvetica;
 
 }
 .card.moving {
