@@ -1,8 +1,4 @@
-document.getElementById("button-one").onclick = function() {
-    document.getElementById("photo").style.display = "inline-block";
-    document.getElementById("arrive").style.display = "inline-block";
-    document.getElementById("main").style.display = "none";
-    document.getElementById("instruct").style.display = "none";
+
 }
 
 document.getElementById("button-two").onclick = function() {
