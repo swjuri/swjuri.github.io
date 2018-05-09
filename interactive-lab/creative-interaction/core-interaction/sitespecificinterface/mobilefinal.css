@@ -37,6 +37,20 @@ a{
 
 .one{
   background-image: url("veg1.jpg");
+  background-size: 100%;
+
+}
+
+.label{
+  font-size:60px;
+  margin-top:600px;
+  margin-left: -350px;;
+
+}
+
+.back a{
+
+  margin:60px;
 
 }
 
