@@ -99,7 +99,7 @@ h1::after {
 html {
   text-align: center;
   height: 100%;
-  background-color: #F48CA0;
+  background-color: CF4856;
 }
 
 body {
@@ -123,7 +123,7 @@ p::after{
   position: absolute;
       display: none;
 
-      margin-top: -1590px;
+      margin-top: -590px;
       font-size: 5vmin;
       margin-left: -460px;
 
@@ -134,7 +134,7 @@ p::after{
   position: absolute;
       display: none;
 
-      margin-top: -1500px;
+      margin-top: -800px;
       font-size: 6vmin;
       margin-left: -500px;
 
@@ -145,7 +145,7 @@ p::after{
   position: absolute;
       display: none;
 
-      margin-top: -1500px;
+      margin-top: -800px;
       font-size: 6vmin;
       margin-left: -500px;
 
@@ -156,7 +156,7 @@ p::after{
   position: absolute;
       display: none;
 
-      margin-top: -1500px;
+      margin-top: -800px;
       font-size: 6vmin;
       margin-left: -500px;
 
@@ -167,4 +167,45 @@ p::after{
   display:inline-block;
   font-size: 12vmin;
 
+}
+
+#finalone{
+  display:none;
+  font-size: 6vmin;
+
+}
+#finaltwo{
+  display:none;
+  font-size: 6vmin;
+
+}
+#finalthree{
+  display:none;
+  font-size: 6vmin;
+
+}
+#finalfour{
+  display:none;
+  font-size: 6vmin;
+
+}
+#finalfive{
+  display:none;
+  font-size: 6vmin;
+
+}
+#finalsix{
+  display:none;
+  font-size: 6vmin;
+
+}
+
+
+.lable{
+  font-size: 40px;
+}
+
+.la{
+  font-size: 30px;
+  color:pink;
 }
