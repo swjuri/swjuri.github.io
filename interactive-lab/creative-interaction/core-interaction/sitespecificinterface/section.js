@@ -1,5 +1,4 @@
 
-}
 
 document.getElementById("button-two").onclick = function() {
     document.getElementById("photot").style.display = "inline-block";
