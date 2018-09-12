@@ -1,0 +1,66 @@
+#cucumber{
+  position: absolute;
+  display: inline-block;
+}
+
+#cucumberr{
+  position: absolute;
+  display: none;
+
+}
+
+#cumber{
+  position: absolute;
+  display: none;
+
+}
+
+#cucumberfour{
+  position: absolute;
+  display: none;
+
+}
+
+#onefruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+#fourfruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+h1{
+  font-size: 8.7em;
+  font-family: futura;
+  margin: 50px;
+}
+
+h2{
+  font-size: 5em;
+  color:#A6B790;
+  margin: 50px;
+
+}
+p{
+  font-size: 3.5em;
+  margin: 50px;
+}
+
+.lable{
+  font-size: 3em;
+
+}
+
+body{
+  color:white;
+  background-color: #344228;
+  font-family: futura;
+
+
+}

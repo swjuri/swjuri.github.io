@@ -1,0 +1,109 @@
+
+
+*{margin: 0px; padding: 0px}
+
+body{
+
+  font-family: futura;
+  margin-top: 100px;
+  background-color: hotpink;
+
+}
+
+h1, button{
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+}
+
+h3{
+  margin-left: 40px;
+  color:white;
+  font-size: 5em;
+}
+
+p{
+  color:#fff;
+  text-align: center;
+  padding-top: 500px;
+
+}
+
+a{
+   text-decoration:none;
+   color:#fff;
+
+}
+
+
+img{
+  display: none;
+  position: absolute;
+}
+
+#main{
+  display: inline-block;
+  position: absolute;
+}
+
+#arrive{
+  display:none;
+  position: absolute;
+  text-align: center;
+  margin-left: 20%;
+  font-size: 3em;
+  top:150px;
+}
+#arrive2{
+  display:none;
+  position: absolute;
+  text-align: center;
+  margin-left: 20%;
+  font-size: 3em;
+  top:150px;
+}
+#arrive3{
+  display:none;
+  position: absolute;
+  text-align: center;
+  margin-left: 20%;
+  font-size: 3em;
+  top:150px;
+}
+
+
+#button-one, #button-two, #button-three{
+  text-align: center;
+  cursor: pointer;
+  font-size:74px;
+  height:550px;
+  width:100%;
+  font-weight: bold;
+  display: inline-block;
+
+
+}
+
+
+
+
+#button-two {
+  padding:20px 60px;
+  outline: none;
+  background-image: url("corn.png");
+  background-size: 100% 100%;
+  border: none;
+  border-radius:5px;
+
+}
+
+#button-three {
+  padding:20px 60px;
+  outline: none;
+  background-image: url("flooower.png");
+  background-size: 100% 100%;
+  border: none;
+  border-radius:5px;
+
+}

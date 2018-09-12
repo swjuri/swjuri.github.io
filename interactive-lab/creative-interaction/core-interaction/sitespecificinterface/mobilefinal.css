@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-size: 100%;
+}
+
+h1{
+  font-weight: bold;
+  line-height: 230px;
+  font-size: 2.7em;
+  position: absolute;
+  left: 70px;
+  top:46px;
+}
+
+a{
+  font-size:7.7em;
+  margin: 30px;
+
+  text-decoration: none;
+  font-family: sans-serif;
+  color:white;
+  font-weight: bold;
+}
+
+
+
+
+.card-container {
+  position: relative;
+
+  transform: translateX(-50%) translateY(-50%);
+  height: 100%;
+  width: 100%;
+}
+
+.one{
+  background-image: url("veg1.jpg");
+  background-size: 100%;
+
+}
+
+.label{
+  font-size:60px;
+  margin-top:600px;
+  margin-left: -350px;;
+
+}
+
+.back a{
+
+  margin:60px;
+
+}
+
+
+
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  color: hotpink;
+  text-align: center;
+  padding-top: 25%;
+  font-size: 80px;
+  line-height: 130px;
+
+  user-select: none;
+  font-family: helvetica;
+
+}
+.card.moving {
+
+}
+.card.card.animating-out {
+  will-change: transform;
+  transition-duration: .3s;
+}
+
+@media screen and (min-width: 400px) {
+
+  .card-container {
+    position: relative;
+    top:870px;
+    transform: translateX(-50%) translateY(-50%);
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+
+
+}

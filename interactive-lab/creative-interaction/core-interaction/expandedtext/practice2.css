@@ -1,0 +1,52 @@
+.wrapper {
+  height: 2817px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+
+  margin: 0 auto;
+
+  background-color: #d82e30;
+  padding-left: 320px;
+}
+.wrapper .titolo {
+  text-align: center;
+  z-index: 2
+  line-height: 2.2;
+  font-family: 'futura', cursive;
+  font-size: 63px;
+  position:relative;
+  float:center;
+
+
+}
+.wrapper .titolo:hover {
+  cursor: pointer;
+}
+.wrapper .titolo .letter {
+  position: relative;
+  letter-spacing: .18em;
+  opacity: 1;
+}
+.wrapper .titolo .letter:nth-of-type(1n+1) {
+  color: #e2d4e8;
+}
+#id20000
+
+.wrapper{
+  transition: 8s;
+}
+.gold-background{
+  background: ;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg) translateY(-15px);
+  }
+}

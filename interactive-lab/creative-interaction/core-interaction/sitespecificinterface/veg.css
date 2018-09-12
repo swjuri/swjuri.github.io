@@ -1,0 +1,27 @@
+#leekk{
+  display: none;
+  position: absolute;
+}
+
+
+#map{
+  display: inline-block;
+  position: absolute;
+}
+
+#Image-Maps-Com-image-maps-2018-05-08-234002{
+  display: inline-block;
+  position: absolute;
+
+}
+#ImageMapsCom-image-maps-2018-05-08-234002{
+  display: inline-block;
+  position: absolute;
+}
+
+body{
+  background-color: #42523A;
+  color:white;
+  font-family: futura;
+  
+}

@@ -1,0 +1,65 @@
+#cilan{
+  position: absolute;
+  display: inline-block;
+}
+
+#cilann{
+  position: absolute;
+  display: none;
+
+}
+
+#stemstem{
+  position: absolute;
+  display: none;
+
+}
+
+#elbowelbow{
+  position: absolute;
+  display: none;
+
+}
+
+#elfruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+#stfruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+
+
+h1{
+  font-size: 8.7em;
+  font-family: futura;
+  margin: 50px;
+}
+
+h2{
+  font-size: 5em;
+  color:#A6B790;
+  margin: 50px;
+
+}
+p{
+  font-size: 3.5em;
+  margin: 50px;
+}
+
+.lable{
+  font-size: 3em;
+
+}
+
+body{
+  color:white;
+  background-color: #A0B265;
+  font-family: futura;

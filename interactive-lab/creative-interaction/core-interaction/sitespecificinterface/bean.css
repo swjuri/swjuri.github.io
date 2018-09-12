@@ -1,0 +1,67 @@
+#bean{
+  position: absolute;
+  display: inline-block;
+}
+
+#beann{
+  position: absolute;
+  display: none;
+
+}
+
+#beanyes{
+  position: absolute;
+  display: none;
+
+}
+
+#beanno{
+  position: absolute;
+  display: none;
+
+}
+
+#yofruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+#nofruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+
+h1{
+  font-size: 8.7em;
+  font-family: futura;
+  margin: 50px;
+}
+
+h2{
+  font-size: 5em;
+  color:#A6B790;
+  margin: 50px;
+
+}
+p{
+  font-size: 3.5em;
+  margin: 50px;
+}
+
+.lable{
+  font-size: 3em;
+
+}
+
+body{
+  color:white;
+  background-color: #4B6A67;
+  font-family: futura;
+
+
+}

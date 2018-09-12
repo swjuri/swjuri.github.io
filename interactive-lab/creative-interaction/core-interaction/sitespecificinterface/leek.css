@@ -1,0 +1,66 @@
+#leekk{
+  position: absolute;
+  display: inline-block;
+}
+
+#leekkk{
+  position: absolute;
+  display: none;
+
+}
+
+#leekyes{
+  position: absolute;
+  display: none;
+
+}
+
+#leekno{
+  position: absolute;
+  display: none;
+
+}
+
+#nofruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+#yesfruit{
+  position: absolute;
+  display: none;
+
+
+}
+
+h1{
+  font-size: 8.7em;
+  font-family: futura;
+  margin: 50px;
+}
+
+h2{
+  font-size: 5em;
+  color:#889B3B;
+  margin: 50px;
+
+}
+p{
+  font-size: 3.5em;
+  margin: 50px;
+}
+
+.lable{
+  font-size: 3em;
+
+}
+
+body{
+  color:white;
+  background-color: #344228;
+  font-family: futura;
+
+
+}
