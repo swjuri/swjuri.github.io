@@ -16,45 +16,36 @@
 
   <script type="text/javascript">
 
-var myVariable=["an","array"];
-myVariable=["an",2];
 
-console.log(myVariable[0])
+var myArray=[
+  ["hello", 100],
+  ["goodbye", "blue"],
+  ["class", 50],
+  ["radom words", 30],
+];
 
-//less than<
+for (var i = 0; i < myArray.length; i++) {
+  var element = document.createElement("div")
+  element.className ="newHeader"
 
-//greater than>
+  var style =""
 
-//less than or equal to <=
+  var arrayValue = myArray[i];
 
-//greater than or equal to >=
+  var arrayValueOne = arrayValue[1]
 
-1<2
-//true
-
-2<=1
-//false
-
-var myVariable=2
-var mySecondVariable=10
-
-console.log(
-  myVariable>mySecondVariable)
-
-
-
-  if (false){
-    //do something
-    console.log("hello!")
-  }else if(true){
-    console.log("goodbye!")
-  }else{
-    console.log("greetings")
+  if (typeof myArray [i][1] == "number"){
+    style = 'style="font-size:' + arrayValueOne +'px;"'
+  }else {
+    style= 'style="font-size:' + arrayValueOne + '""'
   }
+  element.innerHtml = <h1 ${style} > ${arrayValue[0]}</h1>
 
-  if(1>2){//output as true
-    console.log("hello!")
-  }
+  document.getElementById("wrapper").appendChild(element)
+};
+
+
+
 
 
 

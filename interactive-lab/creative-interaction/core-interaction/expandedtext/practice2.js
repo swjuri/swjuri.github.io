@@ -163,8 +163,8 @@ function dodge(word, speed, distance){
 
 
 var emotions = ["The French are glad to % ", "die for love% ", "they delight in fighting duels%", "but i prefer a man%", "who lives zidler's Jewels%", "a kiss on the hand%", "maybe quite continental%","but diamonds are a girl's best friend%","a kiss may be grand%","but it won't pay the rental%", "on your humble flat%", "or help you feed your pussycat%", "men grow cold%", "as girls grow old%", "and we all lose our charms in the end%", "but square cut or pear-shaped%","these rocks don't lose their shape%", "diamonds are a girl's best friend%", "cause we're living%", "in a materia world%", "and I'm a material girl%"];
-var speeds = [30, 80, 60,50,70,90,76,40,100,45,42,36,180,110,210,88,46,33,20,47,190];
-var distances = [30, 80, 60,50,70,90,76,40,100,45,42,36,180,110,210,88,46,33,20,47,190];
+var speeds = [200, 100, 60,50,90,90,76,100,100,45,42,36,180,110,210,88,46,33,20,47,190];
+var distances = [1000, 800, 60,1000,70,100,76,40,100,45,42,36,180,110,210,88,46,33,20,47,190];
 
 dodge(emotions[0], speeds[0], distances[0])
 dodge(emotions[1], speeds[1], distances[1])
