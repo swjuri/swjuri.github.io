@@ -1,5 +1,5 @@
 setTimeout(function(){
-       window.location.href = 'Linear-timept3.html3';
+       window.location.href = 'Linear-timept3.html';
     }, 10000);
 
 
