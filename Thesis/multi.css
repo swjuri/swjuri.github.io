@@ -1,0 +1,48 @@
+.section {
+			display: block;
+			width: 700px;
+			height: 900px;
+			float: left;
+			margin-left: 0px;
+			opacity: 100%;
+			border-radius: 0px;
+      margin-top: 0px;
+		}
+
+		.one { background-color: #c75757; }
+		.two { background-color: #c75c57; }
+		.three { background-color: #c76457; }
+		.four { background-color: #c76957; }
+    .five { background-color: #c86d58; }
+    .six { background-color: #C9705e; }
+    .seven { background-color: #c9775e; }
+    .eight { background-color: #cb7b62; }
+    .nine { background-color: #cb8262; }
+    .ten { background-color: #cc8566; }
+    .eleven { background-color: #cc8a66; }
+    .twelve { background-color: #cd8d6a; }
+
+      .thirteen { background-color: #cd936a; }
+        .fourteen { background-color: #cc9666; }
+        .ft { background-color: #cca366; }
+          .st { background-color: #cca866; }
+            .et { background-color: #ccbb66; }
+              .nt { background-color: #cbc062; }
+                .tt { background-color: #c9c45e; }
+
+
+
+
+
+
+* { padding: 0; margin: 0; }
+	body { overflow-y: hidden; overflow-x: scroll; }
+
+	#filler { position: absolute; top: 0; left: 0; width: 3900px; height: 100%; }
+
+	#container { width: 14000px; position: absolute; top: 0%; }
+
+	.clear { clear: both; }
+	#return-link { position: fixed; top: 12px; left: 18px; font: 11px Verdana, Arial, sans-serif; text-transform: uppercase; }
+	#return-link:link, #return-link:visited
+	#return-link:hover, #return-link:active { text-decoration: underline; }
