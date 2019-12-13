@@ -1,6 +1,6 @@
 setTimeout(function(){
-       window.location.href = 'Linear-timept3.html';
-    }, 5000);
+       window.location.href = 'Linear-timept3.html3';
+    }, 10000);
 
 
 

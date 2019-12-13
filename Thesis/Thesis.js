@@ -1,6 +1,6 @@
 setTimeout(function(){
        window.location.href = 'Linear-timept2.html';
-    }, 5000);
+    }, 10000);
 
 
 
