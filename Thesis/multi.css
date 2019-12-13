@@ -40,7 +40,7 @@
 
 	#filler { position: absolute; top: 0; left: 0; width: 3900px; height: 100%; }
 
-	#container { width: 14000px; position: absolute; top: 0%; }
+	#container { width: 14000px; position: absolute; top: 0%;  }
 
 	.clear { clear: both; }
 	#return-link { position: fixed; top: 12px; left: 18px; font: 11px Verdana, Arial, sans-serif; text-transform: uppercase; }
