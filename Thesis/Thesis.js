@@ -9,6 +9,7 @@ window.location.hash="Again-No-back-button";//again because google chrome don't 
 window.onhashchange=function(){window.location.hash="no-back-button";}
 
 
+window.open ("yourPageURL","mywindow","status=1,toolbar=0");
 
 
 
