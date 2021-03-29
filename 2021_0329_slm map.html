@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> -->
+  <title>Google Maps Multiple Markers</title>
+
+          <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height:  800px;;
+            }
+            /* Optional: Makes the sample page fill the window. */
+        html, body {
+             height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 100%;"></div>
+  <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9-0pCgWjGXt69yxN5hLBD5SZ_OygOHg8&callback"
+          type="text/javascript"></script>
+  <script >
+
+      var locations = [
+//===============belgium============================
+      ['<div id="bodyContent">'+
+        '<p><b>Smell Stories </b>'+
+      ' Verversstraat 15, Quartier Saint-Jacques - ', 50.84646384403934, 4.348478826775991],
+
+
+      ['<div id="bodyContent">'+
+        '<p><b>Parfumerie Christophe </b>'+
+      ' Groenlaan 9, Herzele - ', 50.88404712319315, 3.892112184593411],
+
+//===============estonia============================
+      ['<div id="bodyContent">'+
+        '<p><b>Hyrv </b>'+
+      ' Rotermanni 7, Tallinn - ', 59.439728137253056, 24.75653285407884],
+
+
+//===============france============================
+      ['<div id="bodyContent">'+
+        '<p><b>Sens Unique </b>'+
+      ' 13 Rue du Roi de Sicile, 75004 Paris - ', 48.856095, 2.358783, 4],
+
+      ['<div id="bodyContent">'+
+      '<p><b>Printemps </b>'+
+      '64 Boulevard Haussmann, 75009 Paris,France - '
+      , 48.873909, 2.328658, 5],
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Cour des Hommes </b>'+
+      '11 Rue des Clercs, 57000 Metz, France</p>'
+     ,  49.117584, 6.174013, 3],
+
+
+     ['<div id="bodyContent">'+
+       '<p><b>slm Lab </b>'+
+     '24 Rue Berthe,75018 Paris </p>', 48.885626, 2.339826, 2],
+
+
+     ['<div id="bodyContent">'+
+       '<p><b>Le Paravent  </b>'+
+     '35 rue Auguste Comte, Lyon </p>', 45.753157422703595, 4.830326425930051],
+
+
+     ['<div id="bodyContent">'+
+       '<p><b>Identité Parfumerie  </b>'+
+     '3 rue des Bons Enfants, Muhlouse </p>', 47.74768130377526, 7.337618010758919],
+
+
+     ['<div id="bodyContent">'+
+       '<p><b>La Majestueuse  </b>'+
+     '73 rue des Remparts, Bordeaux </p>', 44.83859792802806, -0.5791571317034981],
+
+
+     ['<div id="bodyContent">'+
+       '<p><b>Diamant Brut </b>'+
+     '24 Avenue Gallieni 83110 Sanary-sur-Mer </p>', 43.117454, 5.79897, 2],
+
+
+     ['<div id="bodyContent">'+
+       '<p><b>Initio </b>'+
+     '23 bis Rue Pierre Semard 83000 Toulon </p>', 43.1225904, 5.93158029, 2],
+
+     ['<div id="bodyContent">'+
+       '<p><b>Printemps </b>'+
+     '10 Rue Serpenoise, 57000 Metz </p>', 49.117476, 6.1758345, 2],
+
+     ['<div id="bodyContent">'+
+       '<p><b>La Pièce d’Arlette </b>'+
+     'rue Berthelot, 83000 Toulon </p>', 43.1240868, 5.9334913, 2],
+
+     ['<div id="bodyContent">'+
+       '<p><b>La Pièce d’Arlette </b>'+
+     '16 avenue des îles dor, 83 400 Hyères </p>', 43.12024, 6.1267328, 2],
+
+     ['<div id="bodyContent">'+
+       '<p><b>Maison Mood </b>'+
+     '17 Rue de la Petite Fusterie, 84000 Avignon </p>', 43.9497271, 4.804297, 2],
+
+
+
+//=================Russia===============
+      [ '<div id="bodyContent">'+
+        '<p><b>Aromateka </b>'+
+      'Znamenka Ulitsa, 7/3, Пушкино, Moskovskaya oblast, Russia, 119019 </p>',55.749283 , 37.607453 , 2],
+
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Eiffel </b>'+
+      'Ulitsa Kuybysheva, 26, Vladikavkaz, Северная Осетия-Алания республика</p>'
+       ,55.749283 , 37.607453 , 2],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Lukse </b>'+
+      'Serebrennikovskaya Ulitsa, 31, Novosibirsk </p>'
+    ,55.026864 , 82.925049 , 2],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Giorgio </b>'+
+      '18-1 A Uchitel skaya st.,St. Petersburg</p>'
+       ,59.93428 , 30.335099 , 2],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Romanoff </b>'+
+      'Engels 413100 </p>'
+       ,51.50030040431417, 46.1182857991483],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>La Maison de La Parfumeria </b>'+
+      'TC Plaza, Karla Marksa 76a, Khabarovsk </p>'
+       ,48.48817233372541, 135.0845450701241],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Imagine </b>'+
+      'Prospekt Lenina 25, mall Europa, Yekaterinburg 620014 </p>'
+       ,56.83873214725192, 60.595188104457584],
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Perfume art  </b>'+
+      'Ulitsa Lenina, 12, Kursk Russie, 305000 </p>'
+       ,51.73373741233279, 36.19247522313646],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Renee Parfum  </b>'+
+      'Baskov Lane 5, Saint-Petersburg </p>'
+       ,59.93945606362247, 30.35233253517446],
+
+
+//=================Middle East===================
+      [ '<div id="bodyContent">'+
+        '<p><b>Perfume Bay: Al Ain </b>'+
+      'Abu Dhabi - United Arab Emirates </p>' , 24.159075 , 55.808119 , 2],
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Perfume Bay: Abu Dhabi </b>'+
+      'Marina Mall Luxury Section - Abu Dhabi </p>' , 24.477385 , 54.320757 , 2],
+
+
+
+      [ '<div id="bodyContent">'+
+        '<p><b>Omar </b>'+
+      'Muscat Oman</p> ' , 23.580222 , 58.564049 , 2],
+
+      [ '<div id="bodyContent">'+
+        '<p><b>L’Odore </b>'+
+      'Eastern Ring Rd, Ash Shuhada, Riyadh 12486, Saudi Arabia </p>', 24.780971 , 46.731373 , 2],
+//==================USA====================
+      [ '<div id="bodyContent">'+
+        '<p><b>Maison10 </b>'+
+      '260 5th Ave 2nd floor, New York, NY 10001 </p>', 40.745094 , -73.987143 , 2],
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Space 240 </b>'+
+      '240 East 29th st, New York'
+      , 40.741717 , -73.978676 , 2],
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Lakewood Ohio Indigo Perfumery </b>'+
+      '12011 Detroit Ave'
+      , 41.48388846250826, -81.7730010332278],
+
+      [  '<div id="bodyContent">'+
+        '<p><b>ZGO Perfumery </b>'+
+      '600 Castro Street, San Francisco'
+      , 37.75919086124621, -122.43501277049506],
+
+
+//==================spain====================
+      [  '<div id="bodyContent">'+
+        '<p><b>Le Secret du Marais </b>'+
+      'Calle Hortaleza, 75 28004 Madrid </p>', 40.425267  , -3.69778 , 2],
+
+//==================sweden====================
+      [  '<div id="bodyContent">'+
+        '<p><b>Stockholm FABLAB</b>'+
+      'Bondegatan 7 </p>', 59.31283066087418, 18.07787296663491],
+
+
+//==================switzerland==================
+      [ '<div id="bodyContent">'+
+        '<p><b>Zurich </b>'+
+      'Spitzenhaus : Börsenstrasse 14, 8001 Zürich </p>',  47.368124, 8.540685 , 2],
+//===================German==================
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Aurel </b>'+
+      'Breite Str. 75, Stendal </p>', 52.60474413088821, 11.8623996874542],
+
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Parfumerie Brückner </b>'+
+      'Kaufingerstraße 28 Munich </p>', 48.13786676355548, 11.575286393183903],
+
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Kurfürsten Parfümerie </b>'+
+      'P7 24 Mannheim </p>', 49.48611433476959, 8.472444877134755],
+
+
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Swan Parfümerie </b>'+
+      'Stadtpl.  29 Eggenfelden </p>', 48.40362071506353, 12.762821267976165],
+
+
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Parfums Uniques </b>'+
+      'Klenzestrasse 22 (at Gärtnerplatz) , 80469 Munich </p>', 48.132303 , 11.576714 , 2],
+
+
+      [  '<div id="bodyContent">'+
+        '<p><b>Aus Liebe Zum Duft </b>'+
+      'Zeiloch 9, 76646 Bruchsal </p>', 49.1381112954183, 8.586154680262839],
+
+
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 2.7,
+      center: new google.maps.LatLng( 46.8182 ,8.2275),
+      mapTypeControlOptions: {
+           mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
+         },
+         disableDefaultUI: true, // a way to quickly hide all controls
+         scaleControl: true,
+         zoomControl: true,
+         zoomControlOptions: {
+           style: google.maps.ZoomControlStyle.LARGE
+         },
+      styles:[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#181818"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#2c2c2c"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8a8a8a"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#373737"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3c3c3c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e4e4e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+]
+
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+    var image = 'https://image.ibb.co/hws0ZK/slm_map_icon.png';
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: image
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+
+
+        }
+      })(marker, i));
+    }
+
+  </script>
+
+</body>
+</html>
